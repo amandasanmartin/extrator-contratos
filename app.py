@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 
 
 # --- SISTEMA DE LOGIN SIMPLES ---
-palavra_passe_correta = "Dados@2026" 
+palavra_passe_correta = st.secrets["senha_app"]
 senha_digitada = st.sidebar.text_input("🔐 Palavra-passe de Acesso", type="password")
 
 if senha_digitada != palavra_passe_correta:
